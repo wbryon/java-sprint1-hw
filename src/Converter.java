@@ -19,6 +19,6 @@ public class Converter {
         System.out.println("Пройденное расстояние: " + new BigDecimal(stepCount * stepLength / kilometer).setScale(2, RoundingMode.DOWN) + " км");
     }
     void convertStepsToKilocalories(int stepCount) {
-        System.out.println("Количество сожжённых килокалорий: " + new BigDecimal(stepCount * calories / kilocaloriie).setScale(2, RoundingMode.DOWN));
+        System.out.println("Количество сожжённых килокалорий: " + new BigDecimal(stepCount * calories / kilocaloriie).setScale(0, RoundingMode.DOWN));
     }
 }
