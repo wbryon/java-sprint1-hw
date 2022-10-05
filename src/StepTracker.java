@@ -43,7 +43,7 @@ public class StepTracker {
             int counter = 0;
             int bestCounter = 0;
             for (int i = 0; i < date.length; i++) {
-                if (i >= stepsTarget) {
+                if (date[i] >= stepsTarget) {
                     counter++;
                     if (bestCounter < counter) {
                         bestCounter = counter;
