@@ -19,9 +19,9 @@ public class Main {
         while (userInput != 0) {
             switch (userInput) {
                 case 1:
-                    System.out.print("Введите месяц: ");
+                    System.out.print("Введите месяц (от 1 до 12): ");
                     int monthNumber = scanner.nextInt();
-                    System.out.print("Введите день: ");
+                    System.out.print("Введите день (от 1 до 30): ");
                     int dateNumber = scanner.nextInt();
                     if (tracker.monthToData[monthNumber - 1].days[dateNumber - 1] > 0) {
                         System.out.println("Ранее введённое значение будет перезаписано!");
@@ -35,7 +35,7 @@ public class Main {
                     }
                     break;
                 case 2:
-                    System.out.print("За какой месяц вы хотите получить статистику: ");
+                    System.out.print("За какой месяц вы хотите получить статистику (от 1 до 12): ");
                     userInput = scanner.nextInt();
                     tracker.monthToData[userInput - 1].printStatistics();
                     break;
